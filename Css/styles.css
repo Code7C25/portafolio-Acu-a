@@ -64,20 +64,23 @@ a {
     text-decoration: none;
     color: #000000;
 }
-.img-perfil {
-    width: 200px; /*ancho de la imagen*/
-    height: 200px; /*alto de la imagen*/
-    border-radius: 50%; /*bordes redondeados*/
-    box-shadow: 0 0 0.5rem #a3a3a3; /*sombra*/
-    margin-top: 2rem; /*margen superior*/
+.main-container {
+    display: flex; /*flexbox*/
+    flex-direction: column; /*direccion de los elementos*/
 }
-.sobremi {
+
+.informacion {
+    background-color: #1a1919; /* color de fondo */
     display: flex;
-    justify-content: center; /* centra el contenido */
-    padding: 2rem 0; /* agrega espacio superior e inferior */
-    background: none; /* elimina el fondo de la sección principal */
+    gap: 3rem;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0 3rem; /* margen superior e inferior */
+    overflow: hidden; /* oculta los elementos que sobresalen */
+    flex-wrap: wrap; /* permite que los elementos se ajusten en varias filas */
 }
-.container-sobremi {
+
+.container-informacion {
     display: flex;
     width: 50%; /* ancho del contenedor */
     padding: 2rem;
@@ -90,93 +93,4 @@ a {
     background: #1a1919; /* aplica el fondo solo al contenedor */
     border-radius: 0.5rem; /* bordes redondeados */
     box-shadow: 0 0 0.5rem #a3a3a3; /* sombra */
-}
-.img-perfil {
-    border-radius: 50%; /*bordes redondeados*/
-}
-.experiencias, .estudios{
-    display: flex;
-    justify-content: center; /*centra el contenido*/
-    margin-top: 3rem; /*margen superior*/
-    color: var(--text-color);
-
-}
-.container-experiencias, .container-estudios{
-    width: 100%; /*ancho del contenedor*/
-    padding: 1rem; /*espacio interno*/
-    margin-top: 2rem; /*margen superior*/
-    line-height: 2rem; /*espacio entre los parrafos*/
-    font-size: large; /*tamaño de la fuente*/
-    margin: 2rem; /*margenes de los lados*/
-}
-
-
-
-/*Responsive design*/
-/* Media Queries agrupadas */
-
-/* Estilos para pantallas pequeñas, celular de 768px o menos */
-@media (max-width: 768px) {
-    .titulo {
-        justify-content: center; /*centra el contenido*/
-    }
-    .navigation{
-        flex-direction: column; /*cambia la direccion de los elementos*/
-        gap: 1rem; /*espacio entre los elementos*/
-        align-items: center;
-    }
-    .container-sobremi {
-        width: 100%; /*ancho del contenedor*/
-        padding: 1rem; /*espacio interno*/
-        margin-top: 1rem; /*margen superior*/
-        line-height: 2.5rem; /*espacio entre los parrafos*/
-        font-size: small; /*tamaño de la fuente*/
-        flex-direction: column; /*cambia la direccion de los elementos*/
-    }
-
-    /*Agregamos el responsive design para la seccion de experiencia y estudios*/
-    .experiencias, .estudios{
-        width: 100%; /*ancho del contenedor*/
-        padding: 1rem; /*espacio interno*/
-        margin-top: 1rem; /*margen superior*/
-        font-size: small; /*tamaño de la fuente*/
-    }
-    .container-experiencias, .container-estudios{
-        width: 100%; /*ancho del contenedor*/
-        margin-top: 0rem; /*margen superior*/
-    }
-}
-
-/* Estilos para pantallas medianas, tablet de 768px a 1024px */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .titulo {
-        justify-content: center; /*centra el contenido*/
-    }
-    .navigation{
-        gap: 2rem; /*espacio entre los elementos*/
-        justify-items: center;
-    }
-
-    /*Agregamos el responsive design para la seccion de experiencia y estudios*/
-    .experiencias, .estudios{
-        width: 75%; /*ancho del contenedor*/
-    }
-}
-
-
-
-/* Estilos para pantallas grandes, desktop de 1024px o más */
-@media (min-width: 1024px) {
-    .titulo {
-        justify-content: flex-start; /*justifica el contenido a la izquierda*/
-    }
-    .navigation{
-        gap: 3rem; /*espacio entre los elementos*/
-        justify-items: flex-end; /*justifica los elementos a la derecha*/
-        margin: 0  3rem; /*margen superior e inferior*/
-    }
-    /*Agregamos el responsive design para la seccion de experiencia y estudios*/
-    .experiencias, .estudios{
-        width: 75%; /*ancho del contenedor*/
-    }
 }

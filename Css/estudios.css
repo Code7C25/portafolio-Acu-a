@@ -1,0 +1,14 @@
+.estudios{
+    display: flex;
+    justify-content: center; /*centra el contenido*/
+    color: var(--text-color);
+
+}
+.container-estudios{
+    width: 100%; /*ancho del contenedor*/
+    padding: 1rem; /*espacio interno*/
+    color: #e9e0e0; /*color de la fuente*/
+    line-height: 2rem; /*espacio entre los parrafos*/
+    font-size: large; /*tamaño de la fuente*/
+    margin: 2rem; /*margenes de los lados*/
+}

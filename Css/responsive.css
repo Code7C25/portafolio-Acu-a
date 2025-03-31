@@ -1,0 +1,96 @@
+/*Responsive design*/
+/* Media Queries agrupadas */
+
+/* Estilos para pantallas pequeñas, celular de 768px o menos */
+@media (max-width: 768px) {
+    .titulo {
+        justify-content: center; /*centra el contenido*/
+    }
+    .navigation{
+        flex-direction: column; /*cambia la direccion de los elementos*/
+        gap: 1rem; /*espacio entre los elementos*/
+        align-items: center;
+    }
+    .container-sobremi {
+        width: 100%; /*ancho del contenedor*/
+        padding: 1rem; /*espacio interno*/
+        margin-top: 1rem; /*margen superior*/
+        line-height: 2.5rem; /*espacio entre los parrafos*/
+        font-size: small; /*tamaño de la fuente*/
+        flex-direction: column; /*cambia la direccion de los elementos*/
+    }
+    .informacion {
+        flex-direction: column; /* coloca los elementos uno debajo del otro */
+        align-items: center; /* centra los elementos */
+        gap: 1.5rem; /* ajusta el espacio entre las secciones */
+    }
+
+    .container-informacion {
+        width: 90%; /* ajusta el ancho del contenedor */
+        margin-top: 1rem; /* reduce el margen superior */
+    }
+    /*Agregamos el responsive design para la seccion de experiencia y estudios*/
+    .experiencias, .estudios,.proyectos{
+        width: 100%; /*ancho del contenedor*/
+        padding: 1rem; /*espacio interno*/
+        margin-top: 1rem; /*margen superior*/
+        font-size: small; /*tamaño de la fuente*/
+    }
+    .container-experiencias, .container-estudios.container-proyectos{
+        width: 100%; /*ancho del contenedor*/
+        margin-top: 0rem; /*margen superior*/
+    }
+}
+
+/* Estilos para pantallas medianas, tablet de 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .titulo {
+        justify-content: center; /*centra el contenido*/
+    }
+    .navigation{
+        gap: 2rem; /*espacio entre los elementos*/
+        justify-items: center;
+    }
+    .informacion {
+        flex-direction: row; /* coloca los elementos en fila */
+        justify-content: left; /* distribuye los elementos uniformemente */
+        gap: 2rem; /* ajusta el espacio entre las secciones */
+    }
+
+    .container-informacion {
+        width: 70%; /* ajusta el ancho del contenedor */
+        margin-top: 2rem; /* ajusta el margen superior */
+    }
+    /*Agregamos el responsive design para la seccion de experiencia y estudios*/
+    .experiencias, .estudios,.proyectos{
+        width: 75%; /*ancho del contenedor*/
+    }
+}
+
+
+
+/* Estilos para pantallas grandes, desktop de 1024px o más */
+@media (min-width: 1024px) {
+    .titulo {
+        justify-content: flex-start; /*justifica el contenido a la izquierda*/
+    }
+    .navigation{
+        gap: 3rem; /*espacio entre los elementos*/
+        justify-items: flex-end; /*justifica los elementos a la derecha*/
+        margin: 0  3rem; /*margen superior e inferior*/
+    }
+    .informacion {
+        flex-direction: row; /* coloca los elementos en fila */
+        justify-content: left; /* distribuye los elementos */
+        gap: 3rem; /* ajusta el espacio entre las secciones */
+    }
+
+    .container-informacion {
+        width: 50%; /* mantiene el ancho del contenedor */
+        margin-top: 3rem; /* ajusta el margen superior */
+    }
+    /*Agregamos el responsive design para la seccion de experiencia y estudios*/
+    .experiencias, .estudios,.proyectos{
+        width: 75%; /*ancho del contenedor*/
+    }
+}
