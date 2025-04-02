@@ -1,0 +1,18 @@
+footer {
+    padding: 2rem 0; /* Espaciado interno arriba y abajo */
+    text-align: center; /* Centrar el texto */
+}
+
+  /* Contenedor principal del footer */
+.footer-container {
+    max-width: 5rem; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    display: flex; /* Usar flexbox para el layout */
+    flex-direction: column; /* Colocar los elementos en una columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+}
+
+  /* Estilos para la sección de información del footer */
+.footer-info {
+    margin-bottom: 10px; /* Espacio debajo de la información */
+}

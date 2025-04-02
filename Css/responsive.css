@@ -1,0 +1,124 @@
+/*Responsive design*/
+
+/* Estilos para pantallas pequeñas, celular de 768px o menos */
+@media (max-width: 768px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navigation {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .container-sobremi {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        line-height: 1.8rem;
+        font-size: 0.9rem;
+        flex-direction: column;
+    }
+    .informacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .container-informacion {
+        width: 90%;
+        margin-top: 1rem;
+    }
+    .experiencias, .estudios, .proyectos {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+    .container-proyectos {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .proyecto {
+        width: 100%;
+        text-align: center;
+    }
+    .img-proyecto {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para pantallas medianas, tablet de 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navigation {
+        gap: 2rem;
+        justify-items: center;
+    }
+    .informacion {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .container-informacion {
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .experiencias, .estudios, .proyectos {
+        width: 80%;
+    }
+    .container-proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+    .proyecto {
+        width: 45%;
+        text-align: center;
+    }
+    .img-proyecto {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para pantallas grandes, desktop de 1024px o más */
+@media (min-width: 1024px) {
+    .titulo {
+        justify-content: flex-start;
+    }
+    .navigation {
+        gap: 3rem;
+        justify-items: flex-end;
+        margin: 0 3rem;
+    }
+    .informacion {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    .container-informacion {
+        width: 60%;
+        margin-top: 3rem;
+    }
+    .experiencias, .estudios, .proyectos {
+        width: 75%;
+    }
+    .container-proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+    .proyecto {
+        width: 30%;
+        text-align: center;
+    }
+    .img-proyecto {
+        width: 100%;
+        height: auto;
+    }
+}
