@@ -1,0 +1,29 @@
+.img-perfil {
+    border-radius: 50%; /*bordes redondeados*/
+    width: 200px; /*ancho de la imagen*/
+    height: 200px; /*alto de la imagen*/
+    border-radius: 50%; /*bordes redondeados*/
+    box-shadow: 0 0 0.5rem #a3a3a3; /*sombra*/
+    margin-top: 2rem; /*margen superior*/
+}
+
+.sobremi {
+    display: flex;
+    justify-content: center; /* centra el contenido */
+    padding: 2rem 0; /* agrega espacio superior e inferior */
+    background: none; /* elimina el fondo de la sección principal */
+}
+.container-sobremi {
+    display: flex;
+    width: 50%; /* ancho del contenedor */
+    padding: 2rem;
+    margin-top: 5rem; /* margen superior */
+    line-height: 2.5rem; /* espacio entre los párrafos */
+    font-size: large; /* tamaño de la fuente */
+    color: #e9e0e0;
+    gap: 2rem; /* espacio entre los elementos */
+    align-items: center; /* alinea los elementos al centro */
+    background: #1a1919; /* aplica el fondo solo al contenedor */
+    border-radius: 0.5rem; /* bordes redondeados */
+    box-shadow: 0 0 0.5rem #a3a3a3; /* sombra */
+}
